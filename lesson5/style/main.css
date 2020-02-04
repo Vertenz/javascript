@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.chase {
+  height: 800px;
+  width: 800px;
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  margin-top: 100px;
+}
+
+.title {
+  background-color: burlywood;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cellWhite, .cellBlack {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cellWhite > img, .cellBlack > img {
+  width: 80px;
+  height: 80px;
+}
+
+.cellBlack {
+  background-color: saddlebrown;
+  color: white;
+}
+.cellBlack > img {
+  height: 80px;
+  width: 80px;
+}
+
+.active {
+  background-color: aqua;
+}
+
+.error {
+  background-color: red;
+}
+
+/*# sourceMappingURL=main.css.map */

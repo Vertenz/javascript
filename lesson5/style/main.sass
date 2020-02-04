@@ -1,0 +1,40 @@
+@import "mixin"
+*
+  margin: 0
+  padding: 0
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+.chase
+  height: 800px
+  width: 800px
+  background-color: aquamarine
+  display: grid
+  grid-template-columns: repeat(10, 1fr)
+  margin-top: 100px
+.title
+  background-color: burlywood
+  height: 80px
+  width: 80px
+  +flex-center()
+.cellWhite
+  width: 80px
+  height: 80px
+  background-color: white
+  +flex-center()
+  & > img
+    width: 80px
+    height: 80px
+.cellBlack
+  @extend .cellWhite
+  background-color: saddlebrown
+  color: white
+  & > img
+    height: 80px
+    width: 80px
+.active
+  background-color: aqua
+.error
+  background-color: red
